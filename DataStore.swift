@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 
 struct Task : Identifiable{
-    var ID = String()
+    var id = String()
     var toDoItem = String()
     
     
