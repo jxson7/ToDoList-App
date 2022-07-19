@@ -18,7 +18,7 @@ struct ContentView: View {
             TextField("Enter a new task", text: self.$newToDo)
             Button(action: {
                 self.addNewToDo()
-            }, label: {Text("Add New")
+            }, label: {Text("Add New").padding()
                 
             })
         }
@@ -39,7 +39,8 @@ struct ContentView: View {
                         Text(task.toDoItem)
                     }.onMove(perform: self.move)
                         .onDelete(perform: self.delete)
-                }.navigationBarTitle("Tasks").navigationBarItems(trailing: EditButton())
+                }.navigationBarTitle(" To-Do List ✅ ").navigationBarItems(trailing: EditButton())
+                        
             }
         }
     }
@@ -58,5 +59,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            
+            
     }
 }
