@@ -1,9 +1,7 @@
-//
 //  ContentView.swift
 //  ToDoList App
 //  Application focuses on the capturing of items via a todo list application with the ability to modify (remove or move) items within the list.
 //  Created by Jason Dookarun on 19/07/2022.
-//
 
 import SwiftUI
 import Combine
@@ -55,3 +53,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
