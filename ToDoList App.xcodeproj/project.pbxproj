@@ -14,6 +14,7 @@
 		1F2C49CC2886FC0100F98B53 /* ToDoList_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C49CB2886FC0100F98B53 /* ToDoList_AppTests.swift */; };
 		1F2C49D62886FC0100F98B53 /* ToDoList_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C49D52886FC0100F98B53 /* ToDoList_AppUITests.swift */; };
 		1F2C49D82886FC0100F98B53 /* ToDoList_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C49D72886FC0100F98B53 /* ToDoList_AppUITestsLaunchTests.swift */; };
+		1F2C49E52887106900F98B53 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C49E42887106900F98B53 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1F2C49D12886FC0100F98B53 /* ToDoList AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDoList AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2C49D52886FC0100F98B53 /* ToDoList_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_AppUITests.swift; sourceTree = "<group>"; };
 		1F2C49D72886FC0100F98B53 /* ToDoList_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F2C49E42887106900F98B53 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		1F2C49AE2886FBFF00F98B53 = {
 			isa = PBXGroup;
 			children = (
+				1F2C49E42887106900F98B53 /* DataStore.swift */,
 				1F2C49B92886FBFF00F98B53 /* ToDoList App */,
 				1F2C49CA2886FC0100F98B53 /* ToDoList AppTests */,
 				1F2C49D42886FC0100F98B53 /* ToDoList AppUITests */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2C49BD2886FBFF00F98B53 /* ContentView.swift in Sources */,
+				1F2C49E52887106900F98B53 /* DataStore.swift in Sources */,
 				1F2C49BB2886FBFF00F98B53 /* ToDoList_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

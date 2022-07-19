@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var taskStore = TaskStore()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            VStack{
+                List(self.taskStore.tasks){ task in
+                    Text(task.toDoItem)
+                }
+            }
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
