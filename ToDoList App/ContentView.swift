@@ -22,16 +22,13 @@ struct ContentView: View {
         }
     }
     
-    // addition of items to a list via counter
     func addNewToDo(){
         taskStore.tasks.append(Task(id: String(taskStore.tasks.count + 1), toDoItem: newToDo))
         self.newToDo = ""
-    // add auto generated ID for future developments
     }
     var body: some View {
         NavigationView{
             VStack{
-                // application of text field for user to enter content
                 searchBar.padding()
                 List{
                     ForEach(self.taskStore.tasks){
@@ -44,12 +41,10 @@ struct ContentView: View {
         }
     }
     
-    // movement of items from one location to another
     func move(from source : IndexSet, to destination : Int){
         taskStore.tasks.move(fromOffsets: source, toOffset: destination)
     }
     
-    // removal of item from list
     func delete(at offsets : IndexSet){
         taskStore.tasks.remove(atOffsets: offsets)
     }
